@@ -1,4 +1,13 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+    body {
+        @apply transition-colors duration-300;
+    }
+}
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar,
